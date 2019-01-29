@@ -1,0 +1,34 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var displayOne = localStorage.getItem("first") + " x " + localStorage.getItem("priceOne") + " = " + localStorage.getItem("totalOne");
+            var displayTwo = localStorage.getItem("first") + " x " + localStorage.getItem("priceOne") + " = " + localStorage.getItem("totalOne");
+            
+            var displaySub = localStorage.getItem("subTotal");
+            document.getElementById("sub").innerHTML = displaySub;
+            
+            var displayTax = localStorage.getItem("tax");
+            document.getElementById("tax").innerHTML = displayTax; 
+            
+            var displayTotal = localStorage.getItem("officialTotal");
+            document.getElementById("tax").innerHTML = displayTotal;
+        </script>
+        <table>
+            <tr>
+                <td id="first"></td>
+            </tr>
+            <tr>
+                <td id="second"></td>
+            </tr>
+            <tr>
+                <td id="sub"></td>
+            </tr>
+            <tr>
+                <td id="tax"></td>
+            </tr>
+                
+        </table>
+    </body>
+</html>

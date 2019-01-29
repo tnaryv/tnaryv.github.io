@@ -1,0 +1,118 @@
+{
+    "banhDanGian":[
+      {
+        "type": "Bánh Bèo",
+        "price": 8.50,
+        "description": "Made from a combination of steamed rice flour and tapioca flour, topped with dried shrimps, crispy pork skin, scallion oil"
+      },
+
+      {
+        "type": "Bánh Bột Lọc",
+        "price": 6.50,
+        "description": "Clear, chewy tapioca dumplings filled with pork and shrimp"
+      },
+
+      {
+        "type": "Bánh Xèo",
+        "price": 9.90,
+        "description": "Sizzling savory pancake stuffed with peeled shrimps, pork, bean sprouts"
+      },
+
+      {
+        "type": "Bánh Cuốn",
+        "price": 8.90,
+        "description": "Thin sheets of steamed rice batter filled with ground pork, jicama, wood ear mushrooms"
+      },
+
+      {
+        "type": "Bánh Khọt",
+        "price": 5.50,
+        "description": "Crispy savory pancakes topped with coconut sauce, shrimp, minced pork"
+      },
+
+      {
+        "type": "Bột Chiên",
+        "price": 6.50,
+        "description": "Fried rice dough with egg and green onions"
+      }
+    ],
+
+    "banhTrang":[
+        {
+          "type": "Bánh Tráng Trộn",
+          "price": 9.98,
+          "description": "Shredded rice paper mixed with tamarind sauce, fresh Vietnamese Coriander, chopped mango, quail eggs, beef jerky"
+        },
+
+        {
+          "type": "Bánh Tráng Nướng",
+          "price": 6.50,
+          "description": "Grilled rice paper with quail eggs, sausage, green onions, dried shrimp"
+        },
+
+        {
+          "type": "Bánh Tráng Cuốn",
+          "price": 9.50,
+          "description": "Rolled rice paper quail eggs, beef jerky, pork floss, chopped mango"
+        }
+    ],
+
+    "dessert": [
+        {
+            "type": "Chè 3 Màu",
+            "price": 6.50,
+            "description": "Three color bean dessert with a coconut milk soup base and taro pieces"
+        },
+
+        {
+            "type": "Chè Thái",
+            "price": 9.50,
+            "description": "A Vietnamese take on a classic Thai dessert tub tim krob with faux pomegranate seeds, mixed fruits, coconut milk"
+        },
+
+        {
+            "type": "Chè Đậu Xanh",
+            "price": 5.00,
+            "description": "Sweet soup with mung bean and tapioca pearl"
+        },
+        
+        {
+            "type": "Bánh Flan",
+            "price": 5.00,
+            "description": "Creme caramel custard topped with coffee and ice"
+        }
+    ],
+    "giaiKhat": [
+        {
+            "type": "Trà Sữa",
+            "price": 5.00,
+            "description": "Milk tea with tapioca pearls"
+        },
+        {
+            "type": "Cà Phê Đen",
+            "price": 4.00,
+            "description": "Made using medium to coarse ground dark roast Vietnamese coffee with a small metal drip filter"
+        },
+        {
+            "type": "Cà Phê Sữa Đá",
+            "price": 4.50,
+            "description": "Vietnamese iced coffee with sweetened condensed milk"
+        },
+        {
+            "type": "Sữa Đậu Nành",
+            "price": 3.50,
+            "description": "Freshly cooked soy milk served hot or cold"
+        },
+        {
+            "type": "Bí Đao",
+            "price": 4.98,
+            "description": "Fresh winter melon juice"
+        },
+        {
+            "type": "Soda Sữa Hột Gà",
+            "price": 5.50,
+            "description": "Made from whisked egg yolk, sweetened condensed milk, club soda"
+        }
+    ]
+
+  }

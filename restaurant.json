@@ -2,37 +2,37 @@
     "menuItems": [{
         "mot": [{
             "type": "Bánh Bèo",
-            "price": 8.50,
+            "price": 8.49,
             "description": "Made from a combination of steamed rice flour and tapioca flour, topped with dried shrimps, crispy pork skin, scallion oil"
         }],
 
         "hai": [{
             "type": "Bánh Bột Lọc",
-            "price": 6.50,
+            "price": 6.49,
             "description": "Clear, chewy tapioca dumplings filled with pork and shrimp"
         }],
 
         "ba": [{
             "type": "Bánh Xèo",
-            "price": 9.90,
+            "price": 9.89,
             "description": "Sizzling savory pancake stuffed with peeled shrimps, pork, bean sprouts"
         }],
 
         "bon": [{
             "type": "Bánh Cuốn",
-            "price": 8.90,
+            "price": 8.89,
             "description": "Thin sheets of steamed rice batter filled with ground pork, jicama, wood ear mushrooms"
         }],
 
         "nam": [{
             "type": "Bánh Khọt",
-            "price": 5.50,
+            "price": 5.49,
             "description": "Crispy savory pancakes topped with coconut sauce, shrimp, minced pork"
         }],
 
         "sau": [{
             "type": "Bột Chiên",
-            "price": 6.50,
+            "price": 6.49,
             "description": "Fried rice dough with egg and green onions"
         }],
 
@@ -44,61 +44,61 @@
 
         "tam": [{
             "type": "Bánh Tráng Nướng",
-            "price": 6.50,
+            "price": 6.49,
             "description": "Grilled rice paper with quail eggs, sausage, green onions, dried shrimp"
         }],
 
         "chin": [{
             "type": "Bánh Tráng Cuốn",
-            "price": 9.50,
+            "price": 9.49,
             "description": "Rolled rice paper quail eggs, beef jerky, pork floss, chopped mango"
         }],
 
         "muoi": [{
             "type": "Chè 3 Màu",
-            "price": 6.50,
+            "price": 6.49,
             "description": "Three color bean dessert with a coconut milk soup base and taro pieces"
         }],
 
         "muoiMot": [{
             "type": "Chè Thái",
-            "price": 9.50,
+            "price": 9.49,
             "description": "A Vietnamese take on a classic Thai dessert tub tim krob with faux pomegranate seeds, mixed fruits, coconut milk"
         }],
 
         "muoiHai": [{
             "type": "Chè Đậu Xanh",
-            "price": 5.00,
+            "price": 4.99,
             "description": "Sweet soup with mung bean and tapioca pearl"
         }],
 
         "muoiBa": [{
             "type": "Bánh Flan",
-            "price": 5.00,
+            "price": 4.99,
             "description": "Creme caramel custard topped with coffee and ice"
         }],
 
         "muoiBon": [{
             "type": "Trà Sữa",
-            "price": 5.00,
+            "price": 4.99,
             "description": "Milk tea with tapioca pearls"
         }],
 
         "muoiNam": [{
             "type": "Cà Phê Đen",
-            "price": 4.00,
+            "price": 3.99,
             "description": "Made using medium to coarse ground dark roast Vietnamese coffee with a small metal drip filter"
         }],
 
         "muoiSau": [{
             "type": "Cà Phê Sữa Đá",
-            "price": 4.50,
+            "price": 4.49,
             "description": "Vietnamese iced coffee with sweetened condensed milk"
         }],
 
         "muoiBay": [{
             "type": "Sữa Đậu Nành",
-            "price": 3.50,
+            "price": 3.49,
             "description": "Freshly cooked soy milk served hot or cold"
         }],
 
@@ -109,7 +109,7 @@
         }],
         "muoiChin": [{
             "type": "Soda Sữa Hột Gà",
-            "price": 5.50,
+            "price": 5.49,
             "description": "Made from whisked egg yolk, sweetened condensed milk, club soda"
         }]
 

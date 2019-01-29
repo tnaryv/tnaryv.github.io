@@ -3,25 +3,25 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
     if (this.readyState == 4 && this.status == 200) { //"this" refers to the function we are calling; 4 = ready; 200 = ok
         var mydata = JSON.parse(this.responseText); //the json file that we get
 
-        var one = mydata.banhDanGian[0].price; //this is how you call things; Bánh bèo
-        var two = mydata.banhDanGian[1].price;//Bánh bột lọc
-        var three = mydata.banhDanGian[2].price;//Bánh xèo
-        var four = mydata.banhDanGian[3].price;//Báng cuốn
-        var five = mydata.banhDanGian[4].price;//Báng khọt
-        var six = mydata.banhDanGian[5].price;//Bột chiên
-        var seven = mydata.banhTrang[0].price;//Bánh tráng trộn
-        var eight = mydata.banhTrang[1].price;//Bánh tráng nướng
-        var nine = mydata.banhTrang[2].price;//Bánh tráng cuốn
-        var ten = mydata.dessert[0].price;//Chè 3 màu
-        var eleven = mydata.dessert[1].price;//Chè thái
-        var twelve = mydata.dessert[2].price;//Chè đậu xanh
-        var thirteen = mydata.desert[3].price;//Bánh flan
-        var fourteen = mydata.giaiKhat[0].price;//Trà sữa
-        var fifteen = mydata.giaiKhat[1].price;//Cà phê đen
-        var sixteen = mydata.giaiKhat[2].price;//Cà phê sữa đá
-        var seventeen = mydata.giaiKhat[3].price;//Sữa đậu nành
-        var eighteen = mydata.giaiKhat[4].price;//Bí đao
-        var nineteen = mydata.giaiKhat[5].price;//Soda sữa hột gà
+        var one = mydata.menuItems[0].mot[0].price; //this is how you call things; Bánh bèo
+        var two = mydata.menuItems[0].hai[0].price;//Bánh bột lọc
+        var three = mydata.menuItems[0].ba[0].price;//Bánh xèo
+        var four = mydata.menuItems[0].bon[0].price;//Báng cuốn
+        var five = mydata.menuItems[0].nam[0].price;//Báng khọt
+        var six = mydata.menuItems[0].sau[0].price;//Bột chiên
+        var seven = mydata.menuItems[0].bay[0].price;//Bánh tráng trộn
+        var eight = mydata.menuItems[0].tam[0].price;//Bánh tráng nướng
+        var nine = mydata.menuItems[0].chin[0].price;//Bánh tráng cuốn
+        var ten = mydata.menuItems[0].muoi[0].price;//Chè 3 màu
+        var eleven = mydata.menuItems[0].muoiMot[0].price;//Chè thái
+        var twelve = mydata.menuItems[0].muoiHai[0].price;//Chè đậu xanh
+        var thirteen = mydata.menuItems[0].muoiBa[0].price;//Bánh flan
+        var fourteen = mydata.menuItems[0].muoiBon[0].price;//Trà sữa
+        var fifteen = mydata.menuItems[0].muoiNam[0].price;//Cà phê đen
+        var sixteen = mydata.menuItems[0].muoiSau[0].price;//Cà phê sữa đá
+        var seventeen = mydata.menuItems[0].muoiBay[0].price;//Sữa đậu nành
+        var eighteen = mydata.menuItems[0].muoiTam[0].price;//Bí đao
+        var nineteen = mydata.menuItems[0].muoiChin[0].price;//Soda sữa hột gà
     }
 
     document.getElementById("firstPrice").innerHTML = "$"+ one;

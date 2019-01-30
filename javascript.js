@@ -23,7 +23,7 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var eighteen = mydata.menuItems[0].muoiTam[0].price; //Bí đao
         var nineteen = mydata.menuItems[0].muoiChin[0].price; //Soda sữa hột gà
 
-        document.getElementById("nameOne").innerHTML = mydata.menuItems[0].mot[0].type;
+        /*document.getElementById("nameOne").innerHTML = mydata.menuItems[0].mot[0].type;
         document.getElementById("nameTwo").innerHTML = mydata.menuItems[0].hai[0].type;
         document.getElementById("nameThree").innerHTML = mydata.menuItems[0].ba[0].type;
         document.getElementById("nameFour").innerHTML = mydata.menuItems[0].bon[0].type;
@@ -41,9 +41,9 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         document.getElementById("nameSixteen").innerHTML = mydata.menuItems[0].muoiSau[0].type;
         document.getElementById("nameSeventeen").innerHTML = mydata.menuItems[0].muoiBay[0].type;
         document.getElementById("nameEighteen").innerHTML = mydata.menuItems[0].muoiTam[0].type;
-        document.getElementById("nameNineteen").innerHTML = mydata.menuItems[0].muoiChin[0].type;
+        document.getElementById("nameNineteen").innerHTML = mydata.menuItems[0].muoiChin[0].type;*/
     }
-    
+
     document.getElementById("firstPrice").innerHTML = "$" + one;
     document.getElementById("secondPrice").innerHTML = "$" + two;
     document.getElementById("thirdPrice").innerHTML = "$" + three;

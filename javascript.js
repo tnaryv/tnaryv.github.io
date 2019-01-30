@@ -22,6 +22,26 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var seventeen = mydata.menuItems[0].muoiBay[0].price;//Sữa đậu nành
         var eighteen = mydata.menuItems[0].muoiTam[0].price;//Bí đao
         var nineteen = mydata.menuItems[0].muoiChin[0].price;//Soda sữa hột gà
+
+        document.getElementById("nameOne").innerHTML = mydata.menuItems[0].mot[0].type;
+        document.getElementById("nameTwo").innerHTML = mydata.menuItems[0].hai[0].type;
+        document.getElementById("nameThree").innerHTML = mydata.menuItems[0].ba[0].type;
+        document.getElementById("nameFour").innerHTML = mydata.menuItems[0].bon[0].type;
+        document.getElementById("nameFive").innerHTML = mydata.menuItems[0].nam[0].type;
+        document.getElementById("nameSix").innerHTML = mydata.menuItems[0].sau[0].type;
+        document.getElementById("nameSeven").innerHTML = mydata.menuItems[0].bay[0].type;
+        document.getElementById("nameEight").innerHTML = mydata.menuItems[0].tam[0].type;
+        document.getElementById("nameNine").innerHTML = mydata.menuItems[0].chin[0].type;
+        document.getElementById("nameTen").innerHTML = mydata.menuItems[0].muoi[0].type;
+        document.getElementById("nameEleven").innerHTML = mydata.menuItems[0].muoiMot[0].type;
+        document.getElementById("nameTwelve").innerHTML = mydata.menuItems[0].muoiHai[0].type;
+        document.getElementById("nameThirteen").innerHTML = mydata.menuItems[0].muoiBa[0].type;
+        document.getElementById("nameFourteen").innerHTML = mydata.menuItems[0].muoiBon[0].type;
+        document.getElementById("nameFifteen").innerHTML = mydata.menuItems[0].muoiNam[0].type;
+        document.getElementById("nameSixteen").innerHTML = mydata.menuItems[0].muoiSau[0].type;
+        document.getElementById("nameSeventeen").innerHTML = mydata.menuItems[0].muoiBay[0].type;
+        document.getElementById("nameEighteen").innerHTML = mydata.menuItems[0].muoiTam[0].type;
+        document.getElementById("nameNineteen").innerHTML = mydata.menuItems[0].muoiChin[0].type;
     }
 
     document.getElementById("firstPrice").innerHTML = "$"+ one;
@@ -68,9 +88,9 @@ xmlhttp.open("GET", "restaurant.json", true);
 xmlhttp.send(); //send this file to the server
 
 localStorage.clear();
-localStorage.setItem("subtotal", 0);
-localStorage.setItem("tax", 0);
-localStorage.setItem("total", 0);
+
+var subtotal = 0;
+
 
 function firstItem() {
     var input = document.getElementById("inputOne");
@@ -82,8 +102,9 @@ function firstItem() {
     var valueOne = document.getElementById("inputOne").value;
     localStorage.setItem("first", valueOne);//local storage input value
 
-    var firstTotal = (localStorage.getItem("priceOne")) * valueOne;
-    localStorage.setItem("totalOne", firstTotal);//calculate quantity x price
+    var totalOne = (localStorage.getItem("priceOne")) * valueOne;
+    var firstTotal = subtotal + totalOne;
+    localStorage.setItem("firstSub", firstTotal);//calculate quantity x price
 }
 
 function secondItem() {
@@ -96,12 +117,13 @@ function secondItem() {
     var valueTwo = document.getElementById("inputTwo").value;
     localStorage.setItem("second", valueTwo);//local storage input value
 
-    var secondTotal = (localStorage.getItem("priceTwo")) * valueTwo;
-    localStorage.setItem("totalTwo", secondTotal);//calculate quantity x price
+    var totalTwo = (localStorage.getItem("priceTwo")) * valueTwo;
+    var secondTotal = subtotal + totalTwo;
+    localStorage.setItem("secondSub", secondTotal);//calculate quantity x price
 }
 
 function finalTotal() {
-    var uno = localStorage.getItem("totalOne");//price of first item
+    var uno = localStorage.getItem("first");//price of first item
     var dos = localStorage.getItem("totalTwo");//price of second item
     
     var subTotal = uno + dos;//price altogether

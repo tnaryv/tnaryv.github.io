@@ -70,8 +70,8 @@
     <script>
         var previous = null;
         var current = null;
-        setInternal(function () {
-            $.getJSON("file.json", function (json) {
+        setInternal(function (){
+            $.getJSON("restaurant.json", function (json) {
                 current = JSON.stringify(json);
                 if (previous && current && previous !== current) {
                     location.reload();

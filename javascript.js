@@ -23,26 +23,6 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var eighteen = mydata.menuItems[0].muoiTam[0].price; //Bí đao
         var nineteen = mydata.menuItems[0].muoiChin[0].price; //Soda sữa hột gà
 
-        document.getElementById("firstPrice").innerHTML = "$" + one;
-        document.getElementById("secondPrice").innerHTML = "$" + two;
-        document.getElementById("thirdPrice").innerHTML = "$" + three;
-        document.getElementById("fourthPrice").innerHTML = "$" + four;
-        document.getElementById("fifthPrice").innerHTML = "$" + five;
-        document.getElementById("sixthPrice").innerHTML = "$" + six;
-        document.getElementById("seventhPrice").innerHTML = "$" + seven;
-        document.getElementById("eigthPrice").innerHTML = "$" + eight;
-        document.getElementById("ninthPrice").innerHTML = "$" + nine;
-        document.getElementById("tenthPrice").innerHTML = "$" + ten;
-        document.getElementById("eleventhPrice").innerHTML = "$" + eleven;
-        document.getElementById("twelvePrice").innerHTML = "$" + twelve;
-        document.getElementById("thirteenthPrice").innerHTML = "$" + thirteen;
-        document.getElementById("fourteenthPrice").innerHTML = "$" + fourteen;
-        document.getElementById("fifteenthPrice").innerHTML = "$" + fifteen;
-        document.getElementById("sixteenthPrice").innerHTML = "$" + sixteen;
-        document.getElementById("seventeenthPrice").innerHTML = "$" + seventeen;
-        document.getElementById("eighteenthPrice").innerHTML = "$" + eighteen;
-        document.getElementById("nineteenthPrice").innerHTML = "$" + nineteen;
-
         document.getElementById("nameOne").innerHTML = mydata.menuItems[0].mot[0].type;
         document.getElementById("nameTwo").innerHTML = mydata.menuItems[0].hai[0].type;
         document.getElementById("nameThree").innerHTML = mydata.menuItems[0].ba[0].type;
@@ -63,7 +43,26 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         document.getElementById("nameEighteen").innerHTML = mydata.menuItems[0].muoiTam[0].type;
         document.getElementById("nameNineteen").innerHTML = mydata.menuItems[0].muoiChin[0].type;
     }
-
+    
+    document.getElementById("firstPrice").innerHTML = "$" + one;
+    document.getElementById("secondPrice").innerHTML = "$" + two;
+    document.getElementById("thirdPrice").innerHTML = "$" + three;
+    document.getElementById("fourthPrice").innerHTML = "$" + four;
+    document.getElementById("fifthPrice").innerHTML = "$" + five;
+    document.getElementById("sixthPrice").innerHTML = "$" + six;
+    document.getElementById("seventhPrice").innerHTML = "$" + seven;
+    document.getElementById("eigthPrice").innerHTML = "$" + eight;
+    document.getElementById("ninthPrice").innerHTML = "$" + nine;
+    document.getElementById("tenthPrice").innerHTML = "$" + ten;
+    document.getElementById("eleventhPrice").innerHTML = "$" + eleven;
+    document.getElementById("twelvePrice").innerHTML = "$" + twelve;
+    document.getElementById("thirteenthPrice").innerHTML = "$" + thirteen;
+    document.getElementById("fourteenthPrice").innerHTML = "$" + fourteen;
+    document.getElementById("fifteenthPrice").innerHTML = "$" + fifteen;
+    document.getElementById("sixteenthPrice").innerHTML = "$" + sixteen;
+    document.getElementById("seventeenthPrice").innerHTML = "$" + seventeen;
+    document.getElementById("eighteenthPrice").innerHTML = "$" + eighteen;
+    document.getElementById("nineteenthPrice").innerHTML = "$" + nineteen;
 
     Number(localStorage.setItem("priceOne", one));
     Number(localStorage.setItem("priceTwo", two));

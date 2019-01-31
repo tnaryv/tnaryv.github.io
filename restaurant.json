@@ -3,7 +3,7 @@
         "mot": [{
             "type": "Bánh Bèo",
             "price": 8.49,
-            "description": "Made from a combination of steamed rice flour and tapioca flour, topped with dried shrimps, crispy pork skin, scallion oil"
+            "description": "Made from a combination of steamed rice flour and tapioca flour, topped with dried shrimps, crispy pork skin, and scallion oil"
         }],
 
         "hai": [{
@@ -15,19 +15,19 @@
         "ba": [{
             "type": "Bánh Xèo",
             "price": 9.89,
-            "description": "Sizzling savory pancake stuffed with peeled shrimps, pork, bean sprouts"
+            "description": "Sizzling savory pancake stuffed with peeled shrimps, pork, and bean sprouts"
         }],
 
         "bon": [{
             "type": "Bánh Cuốn",
             "price": 8.89,
-            "description": "Thin sheets of steamed rice batter filled with ground pork, jicama, wood ear mushrooms"
+            "description": "Thin sheets of steamed rice batter filled with ground pork, jicama, and wood ear mushrooms"
         }],
 
         "nam": [{
             "type": "Bánh Khọt",
             "price": 5.49,
-            "description": "Crispy savory pancakes topped with coconut sauce, shrimp, minced pork"
+            "description": "Crispy savory pancakes topped with coconut sauce, shrimp, and minced pork"
         }],
 
         "sau": [{
@@ -39,19 +39,19 @@
         "bay": [{
             "type": "Bánh Tráng Trộn",
             "price": 9.98,
-            "description": "Shredded rice paper mixed with tamarind sauce, fresh Vietnamese Coriander, chopped mango, quail eggs, beef jerky"
+            "description": "Shredded rice paper mixed with tamarind sauce, fresh Vietnamese Coriander, chopped mango, quail eggs, and beef jerky"
         }],
 
         "tam": [{
             "type": "Bánh Tráng Nướng",
             "price": 6.49,
-            "description": "Grilled rice paper with quail eggs, sausage, green onions, dried shrimp"
+            "description": "Grilled rice paper with quail eggs, sausage, green onions, and dried shrimp"
         }],
 
         "chin": [{
             "type": "Bánh Tráng Cuốn",
             "price": 9.49,
-            "description": "Rolled rice paper quail eggs, beef jerky, pork floss, chopped mango"
+            "description": "Rolled rice paper with quail eggs, beef jerky, pork floss, and chopped mango"
         }],
 
         "muoi": [{
@@ -63,7 +63,7 @@
         "muoiMot": [{
             "type": "Chè Thái",
             "price": 9.49,
-            "description": "A Vietnamese take on a classic Thai dessert tub tim krob with faux pomegranate seeds, mixed fruits, coconut milk"
+            "description": "A Vietnamese take on a classic Thai dessert tub tim krob with faux pomegranate seeds, mixed fruits, and coconut milk"
         }],
 
         "muoiHai": [{
@@ -110,7 +110,7 @@
         "muoiChin": [{
             "type": "Soda Sữa Hột Gà",
             "price": 5.49,
-            "description": "Made from whisked egg yolk, sweetened condensed milk, club soda"
+            "description": "A sweet drink made from whisked egg yolk, sweetened condensed milk, and club soda"
         }]
 
     }]

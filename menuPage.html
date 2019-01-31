@@ -38,28 +38,33 @@
                 background-color: white;
             }
             #storage {
-                width: 8vw;
+                width: 100vw;
                 height: 4vh;
                 margin-left: 10vw;
                 float: left;
             }
-            #totalList {
-                width: 8vw;
-                height: 4vh;
-                color: white;
+            .nav {
+                width: 11.42vw;
                 font-family: 'ABeeZee';
-                font-size: 30px;
+                font-size: 21px;
+                color: white;
+                text-align: right;
             }
-
-            #content {
-                display: none;
-                position: absolute;
-                background-color: #a6a6a6;
-                width: 25vw;
-                min-height: 8vh;  
+            .nav2 {
+                width: 11.42vw;
+                font-family: 'ABeeZee';
+                font-size: 21px;
+                color: white;
+                text-align: left;
             }
-            #totalList:hover #content {
-                display: block;
+            #checkout {
+                width: 10vw;
+                font-size: 20px;
+                font-family: 'ABeeZee';
+                color: white;
+                background-color:#ffb31a;
+                border-radius: 5px 5px 5px 5px;
+                border-color: white;
             }
             td {
                 text-align: center;
@@ -88,14 +93,6 @@
                 width: 15vw;
                 height: 4vh;
                 font-size: 14px;
-            }
-            button {
-                width: 5vw;
-                height: 4vh;
-                background-color: #ffb31a;
-                border-radius: 4px 4px 4px 4px;
-                font-size: 14px;
-                font-family: 'ABeeZee';
             }
             #category {
                 width: 80vw;
@@ -279,27 +276,19 @@
         <div id="heading">Two Aunties</div>
         <div id="bar">
             <div id="storage">
-                <div id="totalList">
-                    Total
-                    <div id="content">
-                        <table>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td id="sub"></td>
-                            </tr>
-                            <tr>
-                                <td>Tax</td>
-                                <td id="tax"></td>
-                            </tr>
-                            <tr>
-                                <td>Total</td>
-                                <td id="officialTotal"></td>
-                            </tr>
-                        </table>
-                        <button onclick="finalTotal()">Total</button>
-                        <button onclick="checkout()" id="checkout">Checkout</button>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <td class="nav">Subtotal:</td>
+                        <td id="sub" class="nav2"></td>
+                        <td class="nav">Tax:</td>
+                        <td id="tax" class="nav2"></td>
+                        <td class="nav">Total:</td>
+                        <td id="total" class="nav2"></td>
+                        <td>
+                            <button onclick="checkout()" id="checkout">Checkout</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
@@ -326,27 +315,24 @@
                 </td>
             </tr>
             <tr id="foodName">
-                <td id="nameOne"><p id="firstPrice"></p></td>
-                <td id="nameTwo"><p id="secondPrice"></p></td>
-                <td id="nameThree"><p id="thirdPrice"></p></td>
+                <td id="nameOne"></td>
+                <td id="nameTwo"></td>
+                <td id="nameThree"></td>
             </tr>
             <tr id="foodDescription">
-                <td>Made from a combination of steamed rice flour and tapioca flour, topped with dried shrimps, crispy pork skin, scallion oil</td>
-                <td>Clear, chewy tapioca dumplings filled with pork and shrimp</td>
-                <td>Sizzling savory pancake stuffed with peeled shrimps, pork, bean sprouts</td>
+                <td id="desOne"></td>
+                <td id="desTwo"></td>
+                <td id="desThree"></td>
             </tr>
             <tr>
                 <td>
                     <input type="number" id="inputOne" min="0" placeholder="0">
-                    <button onclick="firstItem()" id="firstButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputTwo" min="0" placeholder="0">
-                    <button onclick="secondItem()" id="secondButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputThree" min="0" placeholder="0">
-                    <button onclick="thirdItem()" id="thirdButton">Order</button>
                 </td>
             </tr>
         </table>
@@ -365,27 +351,24 @@
                 </td>
             </tr>
             <tr id="foodName">
-                <td id="nameFour"><p id="fourthPrice"></p></td>
-                <td id="nameFive"><p id="fifthPrice"></p></td>
-                <td id="nameSix"><p id="sixthPrice"></p></td>
+                <td id="nameFour"></td>
+                <td id="nameFive"></td>
+                <td id="nameSix"></td>
             </tr>
             <tr id="foodDescription">
-                <td>Thin sheets of steamed rice batter filled with ground pork, jicama, wood ear mushrooms</td>
-                <td>Crispy savory pancakes topped with coconut sauce, shrimp, minced pork</td>
-                <td>Fried rice dough with egg and green onions</td>
+                <td id="desFour"></td>
+                <td id="desFive"></td>
+                <td id="desSix"></td>
             </tr>
             <tr>
                 <td>
                     <input type="number" id="inputFour" min="0" placeholder="0">
-                    <button onclick="fourthItem()" id="fourthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputFive" min="0" placeholder="0">
-                    <button onclick="fifthItem()" id="fifthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputSix" min="0" placeholder="0">
-                    <button onclick="sixthItem()" id="sixthButton">Order</button>
                 </td>
             </tr>
         </table>
@@ -412,27 +395,24 @@
                 </td>
             </tr>
             <tr id="foodName">
-                <td id="nameSeven"><p id="seventhPrice"></p></td>
-                <td id="nameEight"><p id="eigthPrice"></p></td>
-                <td id="nameNine"><p id="ninthPrice"></p></td>
+                <td id="nameSeven"></td>
+                <td id="nameEight"></td>
+                <td id="nameNine"></td>
             </tr>
             <tr id="foodDescription">
-                <td>Shredded rice paper mixed with tamarind sauce, fresh Vietnamese Coriander, chopped mango, quail eggs, beef jerky</td>
-                <td>Grilled rice paper with quail eggs, sausage, green onions, dried shrimp</td>
-                <td>Rolled rice paper quail eggs, beef jerky, pork floss, chopped mango</td>
+                <td id="desSeven"></td>
+                <td id="desEight"></td>
+                <td id="desNine"></td>
             </tr>
             <tr>
                 <td>
                     <input type="number" id="inputSeven" min="0" placeholder="0">
-                    <button onclick="seventhItem()" id="seventhButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputEight" min="0" placeholder="0">
-                    <button onclick="eigthItem()" id="eigthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputNine" min="0" placeholder="0">
-                    <button onclick="ninthItem()" id="ninthButton">Order</button>
                 </td>
             </tr>
         </table>
@@ -457,21 +437,19 @@
                     </td>
                 </tr>
                 <tr id="foodName">
-                    <td id="nameTen"><p id="tenthPrice"></p></td>
-                    <td id="nameEleven"><p id="eleventhPrice"></p></td>
+                    <td id="nameTen"></td>
+                    <td id="nameEleven"></td>
                 </tr>
                 <tr id="foodDescription">
-                    <td>Three color bean dessert with a coconut milk soup base and taro pieces</td>
-                    <td>A Vietnamese take on a classic Thai dessert tub tim krob with faux pomegranate seeds, mixed fruits, coconut milk</td>
+                    <td id="desTen"></td>
+                    <td id="desEleven"></td>
                 </tr>
                 <tr>
                     <td>
                         <input type="number" id="inputTen" min="0" placeholder="0">
-                        <button onclick="tenthItem()" id="tenthButton">Order</button>
                     </td>
                     <td>
                         <input type="number" id="inputEleven" min="0" placeholder="0">
-                        <button onclick="eleventhItem()" id="evelenthButton">Order</button>
                     </td>
 
                 </tr>
@@ -485,15 +463,14 @@
                     </td>
                 </tr>
                 <tr id="foodName">
-                    <td id="nameTwelve"><p id="twelvePrice"></p></td>
+                    <td id="nameTwelve"></td>
                 </tr>
                 <tr id="foodDescription">
-                    <td>Sweet soup with mung bean and tapioca pearl</td>
+                    <td id="desTwelve"></td>
                 </tr>
                 <tr>
                     <td>
                         <input type="number" id="inputTwelve" min="0" placeholder="0">
-                        <button onclick="twelveItem" id="twelveButton">Order</button>
                     </td>
                 </tr>
                 <tr>
@@ -502,15 +479,14 @@
                     </td>
                 </tr>
                 <tr id="foodName">
-                    <td id="nameThirteen"><p id="thirteenthPrice"></p></td>
+                    <td id="nameThirteen"></td>
                 </tr>
                 <tr id="foodDescription">
-                    <td>Creme caramel custard topped with coffee and ice</td>
+                    <td id="desThirteen"></td>
                 </tr>
                 <tr>
                     <td>
                         <input type="number" id="inputThirteen" min="0" placeholder="0">
-                        <button onclick="thirteenthItem" id="thirteenthButton">Order</button>
                     </td>
                 </tr>
             </table>
@@ -538,27 +514,24 @@
                 </td>
             </tr>
             <tr id="foodName">
-                <td id="nameFourteen"><p id="fourteenthPrice"></p></td>
-                <td id="nameFifteen"><p id="fifteenthPrice"></p></td>
-                <td id="nameSixteen"><p id="sixteenthPrice"></p></td>
+                <td id="nameFourteen"></td>
+                <td id="nameFifteen"></td>
+                <td id="nameSixteen"></td>
             </tr>
             <tr id="foodDescription">
-                <td>Milk tea with tapioca pearls</td>
-                <td>Made using medium to coarse ground dark roast Vietnamese coffee with a small metal drip filter</td>
-                <td>Vietnamese iced coffee with sweetened condensed milk</td>
+                <td id="desFourteen"></td>
+                <td id="desFifteen"></td>
+                <td id="desSixteen"></td>
             </tr>
             <tr>
                 <td>
                     <input type="number" id="inputFourteen" min="0" placeholder="0">
-                    <button onclick="fourteenthItem()" id="fourteenthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputFifteen" min="0" placeholder="0">
-                    <button onclick="fifteenthItem()" id="fifteenthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputSixteen" min="0" placeholder="0">
-                    <button onclick="sixteenthItem()" id="sixteenthButton">Order</button>
                 </td>
             </tr>
         </table>
@@ -577,27 +550,24 @@
                 </td>
             </tr>
             <tr id="foodName">
-                <td id="nameSeventeen"><p id="seventeenthPrice"></p></td>
-                <td id="nameEighteen"><p id="eighteenthPrice"></p></td>
-                <td id="nameNineteen"><p id="nineteenthPrice"></p></td>
+                <td id="nameSeventeen"></td>
+                <td id="nameEighteen"></td>
+                <td id="nameNineteen"></td>
             </tr>
             <tr id="foodDescription">
-                <td>Freshly cooked soy milk served hot or cold</td>
-                <td>Fresh winter melon juice</td>
-                <td>Made from whisked egg yolk, sweetened condensed milk, club soda</td>
+                <td id="desSeventeen"></td>
+                <td id="desEighteen"></td>
+                <td id="desNineteen"></td>
             </tr>
             <tr>
                 <td>
                     <input type="number" id="inputSeventeen" min="0" placeholder="0">
-                    <button onclick="seventeenthItem()" id="seventeenthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputEighteen" min="0" placeholder="0">
-                    <button onclick="eighteenthItem()" id="eighteenthButton">Order</button>
                 </td>
                 <td>
                     <input type="number" id="inputNineteen" min="0" placeholder="0">
-                    <button onclick="nineteenthItem()" id="nineteenthButton">Order</button>
                 </td>
             </tr>
         </table>

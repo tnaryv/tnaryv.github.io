@@ -139,6 +139,9 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].mot[0].type + " x " + valueOne + " = $" + sub1;
+        localStorage.setItem("disOne", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2); //display subtotal
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2); //display tax
         document.getElementById("total").innerHTML = "$" + total.toFixed(2); //display total
@@ -224,6 +227,9 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].hai[0].type + " x " + valueTwo + " = $" + sub2;
+        localStorage.setItem("disTwo", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
@@ -308,11 +314,13 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
                 tax13 + tax14 + tax17 + tax16 + tax18 + tax19;
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
+        
+        var display = mydata.menuItems[0].ba[0].type + " x " + valueThree + " = $" + sub3;
+        localStorage.setItem("disThree", display);
 
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
 
     inputThree.onkeypress = function () {
@@ -395,11 +403,13 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
                 tax13 + tax14 + tax17 + tax16 + tax18 + tax19;
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
+                
+        var display = mydata.menuItems[0].bon[0].type + " x " + valueFour + " = $" + sub4;
+        localStorage.setItem("disFour", display);
 
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputFour.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -482,10 +492,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].nam[0].type + " x " + valueFive + " = $" + sub5;
+        localStorage.setItem("disFive", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputFive.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -568,10 +580,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].sau[0].type + " x " + valueSix + " = $" + sub6;
+        localStorage.setItem("disSix", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputSix.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -654,10 +668,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].bay[0].type + " x " + valueSeven + " = $" + sub7;
+        localStorage.setItem("disSeven", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputSeven.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -740,10 +756,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].tam[0].type + " x " + valueEight + " = $" + sub8;
+        localStorage.setItem("disEight", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputEight.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -826,10 +844,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].chin[0].type + " x " + valueNine + " = $" + sub9;
+        localStorage.setItem("disNine", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputNine.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -912,10 +932,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoi[0].type + " x " + valueTen + " = $" + sub10;
+        localStorage.setItem("disTen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputTen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -998,10 +1020,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiMot[0].type + " x " + valueEleven + " = $" + sub11;
+        localStorage.setItem("disEleven", display);    
+        
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputEleven.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1084,10 +1108,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiHai[0].type + " x " + valueTwelve + " = $" + sub12;
+        localStorage.setItem("disTwelve", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputTwelve.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1170,10 +1196,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiBa[0].type + " x " + valueThirteen + " = $" + sub13;
+        localStorage.setItem("disThirteen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputThirteen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1256,10 +1284,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiBon[0].type + " x " + valueFourteen + " = $" + sub14;
+        localStorage.setItem("disFourteen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputFourteen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1342,10 +1372,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiNam[0].type + " x " + valueFifteen + " = $" + sub15;
+        localStorage.setItem("disFifteen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputFifteen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1428,10 +1460,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiSau[0].type + " x " + valueSixteen + " = $" + sub16;
+        localStorage.setItem("disSixteen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputSixteen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1514,10 +1548,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiBay[0].type + " x " + valueSeventeen + " = $" + sub17;
+        localStorage.setItem("disSeventeen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputSeventeen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1600,10 +1636,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiTam[0].type + " x " + valueEighteen + " = $" + sub18;
+        localStorage.setItem("disEighteen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputEighteen.onkeypress = function () {
         if (event.keyCode == 13) {
@@ -1686,10 +1724,12 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
+        var display = mydata.menuItems[0].muoiChin[0].type + " x " + valueNineteen + " = $" + sub19;
+        localStorage.setItem("disNineteen", display);
+
         document.getElementById("sub").innerHTML = "$" + sub.toFixed(2);
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-
     }
     inputNineteen.onkeypress = function () {
         if (event.keyCode == 13) {

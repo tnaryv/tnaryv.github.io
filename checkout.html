@@ -1,34 +1,431 @@
 <html>
-    <head>
-    </head>
-    <body>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+    <style>
+        body {
+            background-color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        #fixed {
+            width: 100vw;
+            height: 16vh;
+            position: fixed;
+        }
+        #heading {
+            width: 100vw;
+            height: 12vh;
+            font-family: 'Allura';
+            font-size: 72px;
+            font-weight: bold;
+            background-color: white;
+            text-align: center;
+        }
+        #bar {
+            width: 100vw;
+            height: 4vh;
+            background-color: #ffb31a;
+        }
+        #back {
+            width: 100vw;
+            height: 16vh;
+            background-color: white;
+        }
+        #summary {
+            width: 100vw;
+            height: 5vh;
+            font-family: 'ABeeZee';
+            font-size: 30px;
+            text-align: center;
+        }
+        #store {
+            width: 50vw;
+            min-height: 50vh;
+            margin-left: 25vw;
+            margin-right: 25vw;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+
+        }
+        #myTable {
+            width: 50vw;
+            min-height: 50vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fixed">
+        <div id="heading">Two Aunties</div>
+        <div id="bar"></div>
+    </div>
+    <div id="back"></div>
+        <div id="summary">__________Order Summary__________</div>
+        <div id="store">
+            <table id="tab"></table>
+        </div>
         <script>
-            var displayOne = localStorage.getItem("first") + " x " + localStorage.getItem("priceOne") + " = " + localStorage.getItem("totalOne");
-            var displayTwo = localStorage.getItem("first") + " x " + localStorage.getItem("priceOne") + " = " + localStorage.getItem("totalOne");
-            
-            var displaySub = localStorage.getItem("subTotal");
-            document.getElementById("sub").innerHTML = displaySub;
-            
-            var displayTax = localStorage.getItem("tax");
-            document.getElementById("tax").innerHTML = displayTax; 
-            
-            var displayTotal = localStorage.getItem("officialTotal");
-            document.getElementById("tax").innerHTML = displayTotal;
+            var sub1 = Number(localStorage.getItem("firstSub"));
+            var sub2 = Number(localStorage.getItem("secondSub"));
+            var sub3 = Number(localStorage.getItem("thirdSub"));
+            var sub4 = Number(localStorage.getItem("fourthSub"));
+            var sub5 = Number(localStorage.getItem("fifthSub"));
+            var sub6 = Number(localStorage.getItem("sixthSub"));
+            var sub7 = Number(localStorage.getItem("seventhSub"));
+            var sub8 = Number(localStorage.getItem("eighthSub"));
+            var sub9 = Number(localStorage.getItem("ninthSub"));
+            var sub10 = Number(localStorage.getItem("tenthSub"));
+            var sub11 = Number(localStorage.getItem("eleventhSub"));
+            var sub12 = Number(localStorage.getItem("twelfthSub"));
+            var sub13 = Number(localStorage.getItem("thirteenthSub"));
+            var sub14 = Number(localStorage.getItem("fourteenthSub"));
+            var sub15 = Number(localStorage.getItem("fifteenthSub"));
+            var sub16 = Number(localStorage.getItem("sixteenthSub"));
+            var sub17 = Number(localStorage.getItem("seventeenthSub"));
+            var sub18 = Number(localStorage.getItem("eighteenthSub"));
+            var sub19 = Number(localStorage.getItem("nineteenthSub"));
+
+            var tax1 = Number(localStorage.getItem("firstTax"));
+            var tax2 = Number(localStorage.getItem("secondTax"));
+            var tax3 = Number(localStorage.getItem("thirdTax"));
+            var tax4 = Number(localStorage.getItem("fourthTax"));
+            var tax5 = Number(localStorage.getItem("fifthTax"));
+            var tax6 = Number(localStorage.getItem("sixthTax"));
+            var tax7 = Number(localStorage.getItem("seventhTax"));
+            var tax8 = Number(localStorage.getItem("eighthTax"));
+            var tax9 = Number(localStorage.getItem("ninthTax"));
+            var tax10 = Number(localStorage.getItem("tenthTax"));
+            var tax11 = Number(localStorage.getItem("eleventhTax"));
+            var tax12 = Number(localStorage.getItem("twelfthTax"));
+            var tax13 = Number(localStorage.getItem("thirteenthTax"));
+            var tax14 = Number(localStorage.getItem("fourteenthTax"));
+            var tax15 = Number(localStorage.getItem("fifteenthTax"));
+            var tax16 = Number(localStorage.getItem("sixteenthTax"));
+            var tax17 = Number(localStorage.getItem("seventeenthTax"));
+            var tax18 = Number(localStorage.getItem("eighteenthTax"));
+            var tax19 = Number(localStorage.getItem("nineteenthTax"));
+
+            var total1 = Number(localStorage.getItem("firstTotal"));
+            var total2 = Number(localStorage.getItem("secondTotal"));
+            var total3 = Number(localStorage.getItem("thirdTotal"));
+            var total4 = Number(localStorage.getItem("fourthTotal"));
+            var total5 = Number(localStorage.getItem("fifthTotal"));
+            var total6 = Number(localStorage.getItem("sixthTotal"));
+            var total7 = Number(localStorage.getItem("seventhTotal"));
+            var total8 = Number(localStorage.getItem("eighthTotal"));
+            var total9 = Number(localStorage.getItem("ninthTotal"));
+            var total10 = Number(localStorage.getItem("tenthTotal"));
+            var total11 = Number(localStorage.getItem("eleventhTotal"));
+            var total12 = Number(localStorage.getItem("twelfthTotal"));
+            var total13 = Number(localStorage.getItem("thirteenthTotal"));
+            var total14 = Number(localStorage.getItem("fourteenthTotal"));
+            var total15 = Number(localStorage.getItem("fifteenthTotal"));
+            var total16 = Number(localStorage.getItem("sixteenthTotal"));
+            var total17 = Number(localStorage.getItem("seventeenthTotal"));
+            var total18 = Number(localStorage.getItem("eighteenthTotal"));
+            var total19 = Number(localStorage.getItem("nineteenthTotal"));
+
+            var sub = sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8 + sub9 + sub10 + sub11 + sub12 +
+                sub13 + sub14 + sub15 + sub16 + sub17 + sub18 + sub19;
+            var tax = tax1 + tax2 + tax3 + tax4 + tax5 + tax6 + tax7 + tax8 + tax9 + tax10 + tax11 + tax12 +
+                tax13 + tax14 + tax17 + tax16 + tax18 + tax19;
+            var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 +
+                total11 + total12 + total13 + total14 + total15 + total16 + total17 + total18 + total19;
+
+            var table = document.getElementById("tab"); //get table
+            table.setAttribute("id", "myTable");
+            //////////////////////////////
+            var tr1 = document.createElement('TR'); //create tr
+            tr1.setAttribute("id", "myTr1");
+            document.getElementById("myTable").appendChild(tr1); //append tr to table
+
+            var td1 = document.createElement('TD'); //create td
+            var tdText1 = document.createTextNode(localStorage.getItem("disOne")); //get info
+            td1.appendChild(tdText1); //append info to td
+            document.getElementById("myTr1").appendChild(td1);
+
+            if (total1 <= 0) {
+                myTr1.removeChild(td1);
+                td1.removeChild(tdText1);
+                myTable.removeChild(tr1);
+            }
+            //////////////////////////////
+            var tr2 = document.createElement('TR'); //create tr
+            tr2.setAttribute("id", "myTr2");
+            document.getElementById("myTable").appendChild(tr2); //append tr to table
+
+            var td2 = document.createElement('TD'); //create td
+            var tdText2 = document.createTextNode(localStorage.getItem("disTwo")); //get info
+            td2.appendChild(tdText2); //append info to td
+            document.getElementById("myTr2").appendChild(td2);
+
+            if (total2 <= 0) {
+                myTr2.removeChild(td2);
+                td2.removeChild(tdText2);
+                myTable.removeChild(tr2);
+            }
+            //////////////////////////////
+            var tr3 = document.createElement('TR'); //create tr
+            tr3.setAttribute("id", "myTr3");
+            document.getElementById("myTable").appendChild(tr3); //append tr to table
+
+            var td3 = document.createElement('TD'); //create td
+            var tdText3 = document.createTextNode(localStorage.getItem("disThree")); //get info
+            td3.appendChild(tdText3); //append info to td
+            document.getElementById("myTr3").appendChild(td3);
+
+            if (total3 <= 0) {
+                myTr3.removeChild(td3);
+                td3.removeChild(tdText3);
+                myTable.removeChild(tr3);
+            }
+            //////////////////////////////
+            var tr4 = document.createElement('TR'); //create tr
+            tr4.setAttribute("id", "myTr4");
+            document.getElementById("myTable").appendChild(tr4); //append tr to table
+
+            var td4 = document.createElement('TD'); //create td
+            var tdText4 = document.createTextNode(localStorage.getItem("disFour")); //get info
+            td4.appendChild(tdText4); //append info to td
+            document.getElementById("myTr4").appendChild(td4);
+
+            if (total4 <= 0) {
+                myTr4.removeChild(td4);
+                td4.removeChild(tdText4);
+                myTable.removeChild(tr4);
+            }
+            //////////////////////////////
+            var tr5 = document.createElement('TR'); //create tr
+            tr5.setAttribute("id", "myTr5");
+            document.getElementById("myTable").appendChild(tr5); //append tr to table
+
+            var td5 = document.createElement('TD'); //create td
+            var tdText5 = document.createTextNode(localStorage.getItem("disFive")); //get info
+            td5.appendChild(tdText5); //append info to td
+            document.getElementById("myTr5").appendChild(td5);
+
+            if (total5 <= 0) {
+                myTr5.removeChild(td5);
+                td5.removeChild(tdText5);
+                myTable.removeChild(tr5);
+            }
+            //////////////////////////////
+            var tr6 = document.createElement('TR'); //create tr
+            tr6.setAttribute("id", "myTr6");
+            document.getElementById("myTable").appendChild(tr6); //append tr to table
+
+            var td6 = document.createElement('TD'); //create td
+            var tdText6 = document.createTextNode(localStorage.getItem("disSix")); //get info
+            td6.appendChild(tdText6); //append info to td
+            document.getElementById("myTr6").appendChild(td6);
+
+            if (total6 <= 0) {
+                myTr6.removeChild(td6);
+                td6.removeChild(tdText6);
+                myTable.removeChild(tr6);
+            }
+            //////////////////////////////
+            var tr7 = document.createElement('TR'); //create tr
+            tr7.setAttribute("id", "myTr7");
+            document.getElementById("myTable").appendChild(tr7); //append tr to table
+
+            var td7 = document.createElement('TD'); //create td
+            var tdText7 = document.createTextNode(localStorage.getItem("disSeven")); //get info
+            td7.appendChild(tdText7); //append info to td
+            document.getElementById("myTr7").appendChild(td7);
+
+            if (total7 <= 0) {
+                myTr7.removeChild(td7);
+                td7.removeChild(tdText7);
+                myTable.removeChild(tr7);
+            }
+            //////////////////////////////
+            var tr8 = document.createElement('TR'); //create tr
+            tr8.setAttribute("id", "myTr8");
+            document.getElementById("myTable").appendChild(tr8); //append tr to table
+
+            var td8 = document.createElement('TD'); //create td
+            var tdText8 = document.createTextNode(localStorage.getItem("disEight")); //get info
+            td8.appendChild(tdText8); //append info to td
+            document.getElementById("myTr8").appendChild(td8);
+
+            if (total8 <= 0) {
+                myTr8.removeChild(td8);
+                td8.removeChild(tdText8);
+                myTable.removeChild(tr8);
+            }
+            //////////////////////////////
+            var tr9 = document.createElement('TR'); //create tr
+            tr9.setAttribute("id", "myTr9");
+            document.getElementById("myTable").appendChild(tr9); //append tr to table
+
+            var td9 = document.createElement('TD'); //create td
+            var tdText9 = document.createTextNode(localStorage.getItem("disNine")); //get info
+            td9.appendChild(tdText9); //append info to td
+            document.getElementById("myTr9").appendChild(td9);
+
+            if (total9 <= 0) {
+                myTr9.removeChild(td9);
+                td9.removeChild(tdText9);
+                myTable.removeChild(tr9);
+            }
+            //////////////////////////////
+            var tr10 = document.createElement('TR'); //create tr
+            tr10.setAttribute("id", "myTr10");
+            document.getElementById("myTable").appendChild(tr10); //append tr to table
+
+            var td10 = document.createElement('TD'); //create td
+            var tdText10 = document.createTextNode(localStorage.getItem("disTen")); //get info
+            td10.appendChild(tdText10); //append info to td
+            document.getElementById("myTr10").appendChild(td10);
+
+            if (total10 <= 0) {
+                myTr10.removeChild(td10);
+                td10.removeChild(tdText10);
+                myTable.removeChild(tr10);
+            }
+            //////////////////////////////
+            var tr11 = document.createElement('TR'); //create tr
+            tr11.setAttribute("id", "myTr11");
+            document.getElementById("myTable").appendChild(tr11); //append tr to table
+
+            var td11 = document.createElement('TD'); //create td
+            var tdText11 = document.createTextNode(localStorage.getItem("disEleven")); //get info
+            td11.appendChild(tdText11); //append info to td
+            document.getElementById("myTr11").appendChild(td11);
+
+            if (total11 <= 0) {
+                myTr11.removeChild(td11);
+                td11.removeChild(tdText11);
+                myTable.removeChild(tr11);
+            }
+            //////////////////////////////
+            var tr12 = document.createElement('TR'); //create tr
+            tr12.setAttribute("id", "myTr12");
+            document.getElementById("myTable").appendChild(tr12); //append tr to table
+
+            var td12 = document.createElement('TD'); //create td
+            var tdText12 = document.createTextNode(localStorage.getItem("disTwelve")); //get info
+            td12.appendChild(tdText12); //append info to td
+            document.getElementById("myTr12").appendChild(td12);
+
+            if (total12 <= 0) {
+                myTr12.removeChild(td12);
+                td12.removeChild(tdText12);
+                myTable.removeChild(tr12);
+            }
+            //////////////////////////////
+            var tr13 = document.createElement('TR'); //create tr
+            tr13.setAttribute("id", "myTr13");
+            document.getElementById("myTable").appendChild(tr13); //append tr to table
+
+            var td13 = document.createElement('TD'); //create td
+            var tdText13 = document.createTextNode(localStorage.getItem("disThirteen")); //get info
+            td13.appendChild(tdText13); //append info to td
+            document.getElementById("myTr13").appendChild(td13);
+
+            if (total13 <= 0) {
+                myTr13.removeChild(td13);
+                td13.removeChild(tdText13);
+                myTable.removeChild(tr13);
+            }
+            //////////////////////////////
+            var tr14 = document.createElement('TR'); //create tr
+            tr14.setAttribute("id", "myTr14");
+            document.getElementById("myTable").appendChild(tr14); //append tr to table
+
+            var td14 = document.createElement('TD'); //create td
+            var tdText14 = document.createTextNode(localStorage.getItem("disFourteen")); //get info
+            td14.appendChild(tdText14); //append info to td
+            document.getElementById("myTr14").appendChild(td14);
+
+            if (total14 <= 0) {
+                myTr14.removeChild(td14);
+                td14.removeChild(tdText14);
+                myTable.removeChild(tr14);
+            }
+            //////////////////////////////
+            var tr15 = document.createElement('TR'); //create tr
+            tr15.setAttribute("id", "myTr15");
+            document.getElementById("myTable").appendChild(tr15); //append tr to table
+
+            var td15 = document.createElement('TD'); //create td
+            var tdText15 = document.createTextNode(localStorage.getItem("disFifteen")); //get info
+            td15.appendChild(tdText15); //append info to td
+            document.getElementById("myTr15").appendChild(td15);
+
+            if (total15 <= 0) {
+                myTr15.removeChild(td15);
+                td15.removeChild(tdText15);
+                myTable.removeChild(tr15);
+            }
+            //////////////////////////////
+            var tr16 = document.createElement('TR'); //create tr
+            tr16.setAttribute("id", "myTr16");
+            document.getElementById("myTable").appendChild(tr16); //append tr to table
+
+            var td16 = document.createElement('TD'); //create td
+            var tdText16 = document.createTextNode(localStorage.getItem("disSixteen")); //get info
+            td16.appendChild(tdText16); //append info to td
+            document.getElementById("myTr16").appendChild(td16);
+
+            if (total16 <= 0) {
+                myTr16.removeChild(td16);
+                td16.removeChild(tdText16);
+                myTable.removeChild(tr16);
+            }
+            //////////////////////////////
+            var tr17 = document.createElement('TR'); //create tr
+            tr17.setAttribute("id", "myTr17");
+            document.getElementById("myTable").appendChild(tr17); //append tr to table
+
+            var td17 = document.createElement('TD'); //create td
+            var tdText17 = document.createTextNode(localStorage.getItem("disSeventeen")); //get info
+            td17.appendChild(tdText17); //append info to td
+            document.getElementById("myTr17").appendChild(td17);
+
+            if (total17 <= 0) {
+                myTr17.removeChild(td17);
+                td17.removeChild(tdText17);
+                myTable.removeChild(tr17);
+            }
+            //////////////////////////////
+            var tr18 = document.createElement('TR'); //create tr
+            tr18.setAttribute("id", "myTr18");
+            document.getElementById("myTable").appendChild(tr18); //append tr to table
+
+            var td18 = document.createElement('TD'); //create td
+            var tdText18 = document.createTextNode(localStorage.getItem("disEighteen")); //get info
+            td18.appendChild(tdText18); //append info to td
+            document.getElementById("myTr18").appendChild(td18);
+
+            if (total18 <= 0) {
+                myTr18.removeChild(td18);
+                td18.removeChild(tdText18);
+                myTable.removeChild(tr18);
+            }
+            //////////////////////////////
+            var tr19 = document.createElement('TR'); //create tr
+            tr19.setAttribute("id", "myTr19");
+            document.getElementById("myTable").appendChild(tr19); //append tr to table
+
+            var td19 = document.createElement('TD'); //create td
+            var tdText19 = document.createTextNode(localStorage.getItem("disNineteen")); //get info
+            td19.appendChild(tdText19); //append info to td
+            document.getElementById("myTr19").appendChild(td19);
+
+            if (total19 <= 0) {
+                myTr19.removeChild(td19);
+                td19.removeChild(tdText19);
+                myTable.removeChild(tr19);
+            }
         </script>
-        <table>
-            <tr>
-                <td id="first"></td>
-            </tr>
-            <tr>
-                <td id="second"></td>
-            </tr>
-            <tr>
-                <td id="sub"></td>
-            </tr>
-            <tr>
-                <td id="tax"></td>
-            </tr>
-                
-        </table>
-    </body>
+</body>
+
 </html>

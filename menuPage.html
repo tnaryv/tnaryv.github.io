@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="javascript.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
@@ -572,6 +573,19 @@
             </tr>
         </table>
     </div>
+    <script>
+        var previous = null;
+        var current = null;
+        setInternal(function () {
+            $.getJSON("restaurant.json", function (json) {
+                current = JSON.stringify(json);
+                if (previous && current && previous !== current) {
+                    location.reload();
+                }
+                previous = current;
+            });
+        }, 2000);
+    </script>
 </body>
 
 </html>

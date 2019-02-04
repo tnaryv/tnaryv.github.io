@@ -146,7 +146,7 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2); //display tax
         document.getElementById("total").innerHTML = "$" + total.toFixed(2); //display total
     }
-    inputOne.onkeypress = function () {
+    inputOne.onkeypress = function() {
         if (event.keyCode == 13) {
             firstItem();
         }
@@ -1368,7 +1368,7 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         var sub = sub1 + sub2 + sub3 + sub4 + sub5 + sub6 + sub7 + sub8 + sub9 + sub10 + sub11 + sub12 + 
                 sub13 + sub14 + sub15 + sub16 + sub17 + sub18 + sub19;
         var tax = tax1 + tax2 + tax3 + tax4 + tax5 + tax6 +  tax7 + tax8 + tax9 + tax10 + tax11 +  tax12 + 
-                tax13 + tax14 + tax17 + tax16 + tax18 + tax19;
+                tax13 + tax14 + tax15 + tax16 + tax17 + tax18 + tax19;
         var total = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10 + total11 + total12 + 
                 total13 + total14 + total15 + total16 + total17 + total18 + total19;
 
@@ -1379,7 +1379,7 @@ xmlhttp.onreadystatechange = function () { //onreadystatechange = i will do this
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
         document.getElementById("total").innerHTML = "$" + total.toFixed(2);
     }
-    inputFifteen.onkeypress = function () {
+    inputFifteen.onkeypress = function() {
         if (event.keyCode == 13) {
             fifteenthItem();
         }
@@ -1746,3 +1746,4 @@ localStorage.clear();
 function checkout() {
     location.href = "checkout.html";
 }
+

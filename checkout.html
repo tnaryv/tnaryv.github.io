@@ -239,22 +239,25 @@
         document.getElementById("displayTotalTotal").innerHTML = "Total: " + "$" + total.toFixed(2);
         //////////////////////////////
         function zeroPercent() {
-            var zero = sub * 1;
+            var zero = total;
             document.getElementById("displayTotalTotal").innerHTML = "Total: " + "$" + zero.toFixed(2);
         }
         //////////////////////////////
         function fifteenPercent() {
-            var fifteen = sub * 1.15;
+            var time = sub * 1.15;
+            var fifteen = time + tax;
             document.getElementById("displayTotalTotal").innerHTML = "Total: " + "$" + fifteen.toFixed(2);
         }
         //////////////////////////////
         function twentyPercent() {
-            var twenty = sub * 1.20;
+            var time = sub * 1.20;
+            var twenty = time + tax;
             document.getElementById("displayTotalTotal").innerHTML = "Total: " + "$" + twenty.toFixed(2);
         }
         //////////////////////////////
         function twentyFivePercent() {
-            var twentyFive = sub * 1.25;
+            var time = sub * 1.25;
+            var twentyFive = time + tax;
             document.getElementById("displayTotalTotal").innerHTML = "Total: " + "$" + twentyFive.toFixed(2);
         }
         //////////////////////////////
